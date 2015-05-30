@@ -1,13 +1,12 @@
 #lang racket
 
 ;take changes
-(define (no-more? coin-values)
-  (null? (cdr coin-values)
-         0
-         (1)))
+(define (no-more? items)
+  (null? items))
+
 
 (define (except-first-denomination items)
-  (cdr (car items)))
+  (cdr  items))
 
 (define (first-denomination items)
   (car items))
@@ -22,3 +21,8 @@
             (cc (- amount
                    (first-denomination coin-values))
                 coin-values)))))
+
+;;test usage
+
+(define us-coins (list 50 25 10 5 1))
+(cc 100 us-coins)
