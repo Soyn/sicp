@@ -10,7 +10,7 @@
       initial
       (op (car sequence)
                (accumulate op initial (cdr sequence)))))
-;
+
 (define (my-map p sequence)
   (accumulate (lambda (x y)
                 (cons (p x) y))
