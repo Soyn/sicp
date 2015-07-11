@@ -1,6 +1,6 @@
 #lang racket
 ;exercise 2.1
-;author:gcMerge
+;author:@Soyn
 
 (define (number x) (car x))
 (define (denom x) (cdr x))
