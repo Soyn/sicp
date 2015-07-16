@@ -1,6 +1,7 @@
 #lang racket
 #|
                 Ex2.68  
+                @Soyn
                 @Brief: the encode procedure takes as arguments a message and a tree 
                    and produces the list of bits that gives the encoded message.And encode-symbol
                   is a procedure,which you must write,that returns the list of bits that encodes a given
