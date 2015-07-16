@@ -6,4 +6,4 @@
 
 ###Content
 
-[Chapter 2. Building Abstractions with Data](CH2/README.md)
+[Chapter 2. Building Abstractions with Data](CH2)
