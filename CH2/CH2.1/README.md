@@ -1,12 +1,12 @@
 ##[Exercise2.1](EX2.1.rkt)
 ##[Exercise2.2](Ex2.2.rkt)
-##[Exercise2.3]
+##Exercise2.3
 ##[Exercise2.4](Ex2.4.rkt)
 ##[Exercise2.5](Ex2.5.rkt)
 ##[Exercise2.6](Ex2.6.rkt)
 ##[Exercise2.7](Ex2.7.rkt)
 ##[Exercise2.8](Ex2.8.rkt)
-##[Exercise2.9]
+##Exercise2.9
 ##[Exercise2.10](Ex2.10.rkt)
 ##[Exercise2.11]
 ##[Exercise2.12](Ex2.12.rkt)
