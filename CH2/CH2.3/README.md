@@ -3,7 +3,7 @@
 ##[Excecise2.55](Ex2.55.rkt)
 ##[Excecise2.56](Ex2.56.rkt)
 ##[Excecise2.57](Ex2.57.rkt)
-##[Excecise2.58](Ex2.58.rkt)
+##Excecise2.58
 ##[Excecise2.59](Ex2.59.rkt)
 ##[Excecise2.60](Ex2.60.rkt)
 ##[Excecise2.61](Ex2.61.rkt)
