@@ -57,3 +57,28 @@ encode this song if we used a fixed-length code for the eight-symbol alphabet?
   ```
   
   and we get 108.
+  
+
+##Excecise2.71
+
+>Exercise 2.71. Suppose we have a Huffman tree for an alphabet of n symbols, and that the relative
+frequencies of the symbols are 1, 2, 4, ..., 2n-1. Sketch the tree for n=5; for n=10. In such a tree (for
+general n) how may bits are required to encode the most frequent symbol? the least frequent symbol?
+
+>>And we use the alphabet to represent the symbols
+so we can get this Huffman Tree
+
+          {a b c d e} 31
+           /           \
+     {a b c d} 15      e 16
+      /     \
+{a b c} 7    d 8
+    /    \
+{a b} 3    c 4
+  /   \
+a 1    b 2
+
+the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
+should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight$2^n - 1$
+
+the maximum number of bits will be $n -1$, for the two symbols of least weights. 
