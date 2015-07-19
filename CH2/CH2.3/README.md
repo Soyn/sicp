@@ -68,7 +68,7 @@ general n) how may bits are required to encode the most frequent symbol? the lea
 >>And we use the alphabet to represent the symbols
 so we can get this Huffman Tree
 
-     {a b c d e} 31
+                   {a b c d e} 31
                      /           \
                 {a b c d} 15      e 16
                  /     \
