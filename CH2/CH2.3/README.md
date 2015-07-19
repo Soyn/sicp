@@ -81,6 +81,6 @@ so we can get this Huffman Tree
 
 
 the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
-should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight$2^n - 1$
+should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight $2^n-1$
 
-the maximum number of bits will be $n -1$, for the two symbols of least weights. 
+the maximum number of bits will be $n-1$, for the two symbols of least weights. 
