@@ -68,15 +68,19 @@ general n) how may bits are required to encode the most frequent symbol? the lea
 >>And we use the alphabet to represent the symbols
 so we can get this Huffman Tree
 
+
+
           {a b c d e} 31
            /           \
      {a b c d} 15      e 16
       /     \
->>{a b c} 7    d 8
-    /    \
->>{a b} 3    c 4
-  /   \
->>a 1    b 2
+  {a b c} 7    d 8
+    /      \
+  {a b} 3  c 4
+  /    \
+ a 1    b 2
+
+
 
 the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
 should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight$2^n - 1$
