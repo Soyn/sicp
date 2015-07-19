@@ -79,6 +79,7 @@ so we can get this Huffman Tree
       a 1    b 2
 
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
 should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight $2^n-1$
