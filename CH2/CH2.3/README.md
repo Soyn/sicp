@@ -72,11 +72,11 @@ so we can get this Huffman Tree
            /           \
      {a b c d} 15      e 16
       /     \
-{a b c} 7    d 8
+>>{a b c} 7    d 8
     /    \
-{a b} 3    c 4
+>>{a b} 3    c 4
   /   \
-a 1    b 2
+>>a 1    b 2
 
 the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
 should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight$2^n - 1$
