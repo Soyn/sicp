@@ -50,7 +50,7 @@ encode this song if we used a fixed-length code for the eight-symbol alphabet?
 
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/encoded-rock-song.png)
 
-- And we can get the length by using the '(length encoded-rock-tree)',and we get 84.If we were to use a fixed-length encoding on that rock song, we would need 3 bits (8 = 2^3) per symbol.So we can do this to figure how many bits we need to use:
+- And we can get the length by using the `(length encoded-rock-tree)`,and we get 84.If we were to use a fixed-length encoding on that rock song, we would need 3 bits (8 = 2^3) per symbol.So we can do this to figure how many bits we need to use:
 
   ```racket
   (* 3 ( length rock-song))
