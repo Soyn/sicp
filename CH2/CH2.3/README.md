@@ -17,7 +17,7 @@
 ##[Excecise2.69](Ex2.69.rkt)
 ##[Excecise2.70](Ex2.70.rkt)
 >The following eight-symbol alphabet with associated relative frequencies was designed to
-efficiently encode the lyrics of 1950s rock songs. (Note that the `symbols` of an `alphabet`need not be
+efficiently encode the lyrics of 1950s rock songs. (Note that the `symbols` of an `alphabet`need not to be
 individual letters.)
 
 
