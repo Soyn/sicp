@@ -85,7 +85,7 @@ The tree for n = 10 looks simliar,only larger.the minimum number of bits to cons
 
 the maximum number of bits will be `n-1`, for the two symbols of least weights. 
 
-##[Exercise2.72]
+##Exercise2.72
 
 >`Consider the encoding procedure that you designed in [exercise 2.68(Ex2.68). What is the order of
 growth in the number of steps needed to encode a symbol? Be sure to include the number of steps needed
