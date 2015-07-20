@@ -17,7 +17,7 @@
 ##[Excecise2.69](Ex2.69.rkt)
 ##[Excecise2.70](Ex2.70.rkt)
 >The following eight-symbol alphabet with associated relative frequencies was designed to
-efficiently encode the lyrics of 1950s rock songs. (Note that the ``symbols'' of an ``alphabet'' need not be
+efficiently encode the lyrics of 1950s rock songs. (Note that the `symbols` of an `alphabet`need not be
 individual letters.)
 
 
@@ -50,7 +50,7 @@ encode this song if we used a fixed-length code for the eight-symbol alphabet?
 
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/encoded-rock-song.png)
 
-- And we can get the length by using the `(length encoded-rock-tree)`,and we get 84.If we were to use a fixed-length encoding on that rock song, we would need 3 bits (8 = 2^3) per symbol.So we can do this to figure how many bits we need to use:
+- And we can get the length by using the `(length encoded-rock-tree)`,and we get 84. If we were to use a fixed-length encoding on that rock song, we would need 3 bits (8 = 2^3) per symbol. So we can do this to figure how many bits we need to use:
 
   ```racket
   (* 3 ( length rock-song))
@@ -62,8 +62,8 @@ encode this song if we used a fixed-length code for the eight-symbol alphabet?
 ##Excecise2.71
 
 >Exercise 2.71. Suppose we have a Huffman tree for an alphabet of n symbols, and that the relative
-frequencies of the symbols are 1, 2, 4, ..., 2n-1. Sketch the tree for n=5; for n=10. In such a tree (for
-general n) how may bits are required to encode the most frequent symbol? the least frequent symbol?
+frequencies of the symbols are 1, 2, 4, ..., 2^n-1. Sketch the tree for n=5; for n=10. In such a tree (for
+general n) how may bits are required to encode the most frequent symbol and the least frequent symbol?
 
 >>And we use the alphabet to represent the symbols
 so we can get this Huffman Tree
@@ -81,7 +81,6 @@ so we can get this Huffman Tree
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-the tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(in another way,we 
-should get the shortest way to the leaf) for such tree the is 1, for the symbol of weight `2^n-1`
+The tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(i.e. shortest way to the leaf) for such tree the is 1, for the symbol of weight `2^n-1`.
 
 the maximum number of bits will be `n-1`, for the two symbols of least weights. 
