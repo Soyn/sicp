@@ -1,10 +1,5 @@
 ##Excercise2.73
-> `We can also extract from the table the constructors to be used by the programs external to the packages in
-making complex numbers from real and imaginary parts and from magnitudes and angles. As in
-section 2.4.2, we construct rectangular numbers whenever we have real and imaginary parts, and polar
-numbers whenever we have magnitudes and angles:
-
-Exercise 2.73. Section 2.3.2 described a program that performs symbolic differentiation:
+>`Exercise 2.73. Section 2.3.2 described a program that performs symbolic differentiation:
 
 
 ```racket
