@@ -79,15 +79,14 @@ so we can get this Huffman Tree
       a 1    b 2
 
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 The tree for n = 10 looks simliar,only larger.the minimum number of bits to constructa symbol(i.e. shortest way to the leaf) for such tree the is 1, for the symbol of weight `2^n-1`.
 
 the maximum number of bits will be `n-1`, for the two symbols of least weights. 
 
-##(Exercise2.72)
+##Exercise2.72
 
->`Consider the encoding procedure that you designed in (exercise 2.68)[Ex2.68]. What is the order of
+>`Consider the encoding procedure that you designed in [exercise 2.68](Ex2.68). What is the order of
 growth in the number of steps needed to encode a symbol? Be sure to include the number of steps needed
 to search the symbol list at each node encountered. To answer this question in general is difficult. Consider
 the special case where the relative frequencies of the n symbols are as described in exercise 2.71, and give
