@@ -41,3 +41,25 @@ into the data-directed dispatch?
 Thus, we cannot assimilate the predicates number? andsame-variable? into the data-directed dispatch.
 
 `
+b. Write the procedures for derivatives of sums and products, and the auxiliary code required to install
+them in the table used by the program above.
+
+##[Excercise2.73](Ex2.73.rkt)
+
+c. Choose any additional differentiation rule that you like, such as the one for exponents (exercise 2.56),
+and install it in this data-directed system.
+
+##[Excercise2.73](Ex2.73.rkt)
+
+d. In this simple algebraic manipulator the type of an expression is the algebraic operator that binds it
+together. Suppose, however, we indexed the procedures in the opposite way, so that the dispatch line in
+deriv looked like
+```racket
+
+((get (operator exp) 'deriv) (operands exp) var)
+
+```
+
+What corresponding changes to the derivative system are required?
+
+>>the only thing is to change the order fo arguments in procedure `put`
