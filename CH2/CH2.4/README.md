@@ -62,4 +62,4 @@ deriv looked like
 
 What corresponding changes to the derivative system are required?
 
->>the only thing is to change the order fo arguments in procedure `put`
+>>the only thing is to change the order for arguments in procedure `put`
