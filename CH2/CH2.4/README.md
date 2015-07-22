@@ -61,7 +61,7 @@ deriv looked like
 
 What corresponding changes to the derivative system are required?
 
-<<<<<<< HEAD
+
 >>the only thing is to change the order fo arguments in procedure `put`
 
 
