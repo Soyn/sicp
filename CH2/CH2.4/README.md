@@ -156,63 +156,72 @@ company;s file.
 > exercise2.76
 
 >>  `Solution: `
-			The question asks us to consider three ways of handling generic operation:
+
+The question asks us to consider three ways of handling generic operation:
 			
-			1. Explicit Dispatch(i.e. , Disptatching on Type)
-			2. Data-Directied Style
-			3. Message-Passing Style.
+	1. Explicit Dispatch(i.e. , Disptatching on Type)
+	2. Data-Directied Style
+	3. Message-Passing Style.
 			
 			
-			The first two techniques are similar in the sense that could be descibed as " intelligent operation", where knowledge of and the 
-			logic pertaining to the generic type set is maintained in method/procedures/functions described to accept generic types as arguments.
-			Specifically, first, the procedure is invoked with a generic type as argument; then the procedure parses the specific type of the argument;
-			and finally based on the specific type, different actions are undertaken by the procedure.
+	The first two techniques are similar in the sense that could be descibed as " intelligent operation", where knowledge of and the 
+	logic pertaining to the generic type set is maintained in method/procedures/functions described to accept generic types as arguments.
+	Specifically, first, the procedure is invoked with a generic type as argument; then the procedure parses the specific type of the argument;
+	and finally based on the specific type, different actions are undertaken by the procedure.
 			
-			But the the third technique differ from first two, i described details below.
+	But the the third technique differ from first two, i described details below.
 			
-			Message-Passing Style, could be described an "intelligent object" style of design, where the knowledge of and logic operating to the generic type
-			set is maintained in the generic object itself. In this model, the data object itself receives the requested operation name as message, and handles
-			that message correctly according to its specific type.
+	Message-Passing Style, could be described an "intelligent object" style of design, where the knowledge of and logic operating to the generic type
+	set is maintained in the generic object itself. In this model, the data object itself receives the requested operation name as message, and handles
+	that message correctly according to its specific type.
 			
-			========
-			ANSWER
-			========
-			`Explicit DISPATCH: ADDING A NEW TYPE`
+	========
+	ANSWER
+	========
+	
+	
+`Explicit DISPATCH: ADDING A NEW TYPE`
 			
-			1.  We should create a new type-specific constructors and selectors.
-			2.  We must avoid naming conflict with the rest of the systerm when we name the new type-specifc constructors and selectors.
-			3.  The constructors must "tag" the newly constructored data with the approciate type-specific tag.
-			4. Each of the generic selectors must be modifoed and updated to recongnize the new type and dispatch accordingly when invoked.
+	1.  We should create a new type-specific constructors and selectors.
+	2.  We must avoid naming conflict with the rest of the systerm when we name the new type-specifc constructors and selectors.
+	3.  The constructors must "tag" the newly constructored data with the approciate type-specific tag.
+	4. Each of the generic selectors must be modifoed and updated to recongnize the new type and dispatch accordingly when invoked.
 			
-			`DATA-DIRECTED STYLE: ADDING A NEW TYPE`
+
+`DATA-DIRECTED STYLE: ADDING A NEW TYPE`
 			
-			1. We must create new type-specific constructors and selectors
-			2. Names for these new type-specific constructors and selectors must be chosen in an internally consistent and coherent way, but we need not concern 
-				 ourselves with potential naming conflicts arising from outside the new module we are designing.
-			3. The constructors must "tag" the newly constructed data with the appropriate type-specific tag.
-			4. We must install the newly created type-specific constructors abd selectors into the operations table, under the correct "operation"
-				and "type" selectors.
+	1. We must create new type-specific constructors and selectors
+	2. Names for these new type-specific constructors and selectors must be chosen in an internally consistent and coherent way, but we need not concern 
+	   ourselves with potential naming conflicts arising from outside the new module we are designing.
+	3. The constructors must "tag" the newly constructed data with the appropriate type-specific tag.
+	4. We must install the newly created type-specific constructors abd selectors into the operations table, under the correct "operation"
+	   and "type" selectors.
+	   
 				
-			`MESSAGE-PASSING STYLE: ADDING A NEW TYPE`
+`MESSAGE-PASSING STYLE: ADDING A NEW TYPE`
 			
-			1. We must define a new type-specific constructor for the type.
-			2. The constructor must internally define and implement procedures for handing any possible invocation made to it by a generic selector(i.e. , define
-			     the generic selectors in its own type-specific way.)
-			3.	The new constructor must be named in a globally unique way, but the names chosen internally for handling the various generic selection operations
-				 need not be globally unique.
+	1. We must define a new type-specific constructor for the type.
+	2. The constructor must internally define and implement procedures for handing any possible invocation made to it by a generic selector(i.e. , define
+	   the generic selectors in its own type-specific way.)
+	3. The new constructor must be named in a globally unique way, but the names chosen internally for handling the various generic selection operations
+	   need not be globally unique.
 				 
 			
-			`which organization would  be most appropriate for a system in which new types must be often added?`
+`which organization would  be most appropriate for a system in which new types must be often added?`
 			
-			The most appropriate organization for this would be `Message-passing`, and below is my reason:
-			>>  None of the existing types, or their constructors, need to be modified if we are adding a new type. Instead, all we need to do is define the constructor for the
-				  new type in a globally unique way, and implement type-specific procedures for responding to the generic selectors.
+The most appropriate organization for this would be `Message-passing`, and below is my reason:
+			
+>>  None of the existing types, or their constructors, need to be modified if we are adding a new type. Instead, all we need to do is define the constructor for the
+	new type in a globally unique way, and implement type-specific procedures for responding to the generic selectors.
 				  
 				  
-			`which organization would be the most approciate for a system in which new operation must ofen be added?`
+`which organization would be the most approciate for a system in which new operation must ofen be added?`
 			
-			The most approciate for this would be `Data-directerd` style, and below is my reason:
-			>> Message-passing style becomes a bit more cumbersome when we are constantly adding new operations, since the dispatch routine in each pre-exising constructor
-			must be modified to handle the new operation. It's true that in the data-directed style we similarly have to update the install package for each type to support the new
-			operation, but this seems like a less cumbersome route to go to than in the case of message-passing style.
+			
+The most approciate for this would be `Data-directerd` style, and below is my reason:
+			
+
+>> Message-passing style becomes a bit more cumbersome when we are constantly adding new operations, since the dispatch routine in each pre-exising constructor
+must be modified to handle the new operation. It's true that in the data-directed style we similarly have to update the install package for each type to support the new
+operation, but this seems like a less cumbersome route to go to than in the case of message-passing style.
 				  
