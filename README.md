@@ -6,7 +6,7 @@
 
 ###Content
 
-- [Chapter 2.  Building Abstractions with Data](CH2/README.md)
+- Chapter 2.  Building Abstractions with Data
   - [Chapter2.1 Introduction to Data Abstraction](CH2/CH2.1/README.md)
   - [Chapter2.2 Hierarchical Data and the Closure Property](CH2/CH2.2/README.md)
   - [Chapter2.3 Symbolic Data](CH2/CH2.3/README.md)
