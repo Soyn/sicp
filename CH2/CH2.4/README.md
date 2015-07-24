@@ -252,3 +252,35 @@ is apply-generic invoked? What procedure is dispatched to in each case?
 `Answer:` Before Alyssa added the code. We didn't define the  `(magnitude z)` operation in complex, hence the
 error. After we defined the `(magnitude z)`, and as long as called, first dispatch will be the magnitude of complex
 and second will be magnitude of the rectangular. So the apply-generic is invoked twice.
+
+
+##Exercise2.78
+> The internal procedures in the scheme-number package are essentially nothing more
+than calls to the primitive procedures +, -, etc. It was not possible to use the primitives of the language
+directly because our type-tag system requires that each data object have a type attached to it. In fact,
+however, all Lisp implementations do have a type system, which they use internally. Primitive predicates
+such as symbol? and number? determine whether data objects have particular types. Modify the
+definitions of type-tag, contents, and attach-tag from section 2.4.2 so that our generic system
+takes advantage of Scheme's internal type system. That is to say, the system should work as before except
+that ordinary numbers should be represented simply as Scheme numbers rather than as pairs whose car is
+the symbol scheme-number.
+
+>> `solution`:
+```racket
+( define ( type-tag datum)
+   ( cond ( ( number? datum) datum)
+         ( ( pair? datum) ( car datum))
+         ( else ( error "Wrong datum --TYPE-TAG" datum))))
+
+( define ( contents datum)
+   ( cond ( ( number? datum) datum)
+         ( ( pair? datum) ( cadr datum))
+         ( else ( error "Wrong datum--CONTENTS" datum))))
+
+( define ( attach-tag content)
+   ( cond ( ( number? content) content)
+         ( ( pair? content) ( cons tag content))))
+
+```
+
+##[Exercise2.79](Ex2.79.rkt)
