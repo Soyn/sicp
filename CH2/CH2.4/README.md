@@ -151,6 +151,7 @@ personnel information into the central system?
 company;s file.
 
 ##[Excercise2.75](Ex2.75.rkt)
+
 ##Exercise2.76
 
 > exercise2.76
@@ -266,7 +267,10 @@ that ordinary numbers should be represented simply as Scheme numbers rather than
 the symbol scheme-number.
 
 >> `solution`:
+
 ```racket
+
+
 ( define ( type-tag datum)
    ( cond ( ( number? datum) datum)
          ( ( pair? datum) ( car datum))
