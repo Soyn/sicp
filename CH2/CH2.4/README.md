@@ -225,3 +225,30 @@ The most approciate for this would be `Data-directerd` style, and below is my re
 must be modified to handle the new operation. It's true that in the data-directed style we similarly have to update the install package for each type to support the new
 operation, but this seems like a less cumbersome route to go to than in the case of message-passing style.
 				  
+				  
+##Excercise2.77
+
+>Louis Reasoner tries to evaluate the expression (magnitude z) where z is the object
+shown in figure 2.24. To his surprise, instead of the answer 5 he gets an error message from applygeneric,
+saying there is no method for the operation magnitude on the types (complex). He shows
+this interaction to Alyssa P. Hacker, who says ``The problem is that the complex-number selectors were
+never defined for complex numbers, just for polar and rectangular numbers. All you have to do to
+make this work is add the following to the complex package:''
+
+
+```racket
+
+(put 'real-part '(complex) real-part)
+(put 'imag-part '(complex) imag-part)
+(put 'magnitude '(complex) magnitude)
+(put 'angle '(complex) angle)
+
+```
+
+Describe in detail why this works. As an example, trace through all the procedures called in evaluating the
+expression (magnitude z) where z is the object shown in figure 2.24. In particular, how many times
+is apply-generic invoked? What procedure is dispatched to in each case?
+
+`Answer:` Before Alyssa added the code. We didn't define the  `(magnitude z)` operation in complex, hence the
+error. After we defined the `(magnitude z)`, and as long as called, first dispatch will be the magnitude of complex
+and second will be magnitude of the rectangular. So the apply-generic is invoked twice.
