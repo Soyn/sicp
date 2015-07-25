@@ -38,24 +38,33 @@ operation:
   ;;following added to scheme-number package 
  (put 'exp '(scheme-number scheme-number)
 	(lambda (x y) (tag (expt x y)))) 	; using primitive expt
+ ```
 	
 What happens if we call exp with two complex numbers as arguments?
 
+
+
 `Answer.`
->> a. After Louis's procedure installed. whenever apply-generic is called with two arguments of type
+
+>>a. After Louis's procedure installed. whenever apply-generic is called with two arguments of type
 scheme-number or two arguments of type complex, we can not found an operation in the table. And it drops
 into an infinite recursion.
 
-> b. Is Louis correct that something had to be done about coercion with arguments of the same type, or does
+
+>b. Is Louis correct that something had to be done about coercion with arguments of the same type, or does
 apply-generic work correctly as is?
+
+
 
 `Answer.`
 
->> Louis's modifications to the coercion can not work. If we apply his modifications, will cause the possibility
+>>Louis's modifications to the coercion can not work. If we apply his modifications, will cause the possibility
 of infinite recursions.
 
 
-> c. Modify apply-generic so that it doesn't try coercion if the two arguments have the same type.
+
+>c. Modify apply-generic so that it doesn't try coercion if the two arguments have the same type.
+
 
 `Answer.`
 
