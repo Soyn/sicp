@@ -11,3 +11,4 @@
   - [Chapter2.2 Hierarchical Data and the Closure Property](CH2/CH2.2)
   - [Chapter2.3 Symbolic Data](CH2/CH2.3/README.md)
   - [Chapter2.4 Multiple Representations for Abstract Data](CH2/CH2.4)
+  - [Chapter2.5 Systems with Generic Operations](CH2/CH2.5)
