@@ -67,3 +67,5 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 `Answer.`
 
 > ##[Exercise2.81_c](Ex2.81_c.rkt)
+
+##[Exercise2.82](Ex2.82.rkt)
