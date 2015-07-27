@@ -68,6 +68,7 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 
 > ##[Exercise2.81_c](Ex2.81_c.rkt)
 
+<<<<<<< HEAD
 ##[Exercise2.82](Ex2.82.rkt)
 
 ##[Exercise2.83](Ex2.83.rkt)
@@ -80,3 +81,6 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 
 `Note: `
 >> To accomodate generic number in the complex package, we should replace operators such as +, *  with their generic counterparts add,mul. 
+=======
+##[Exercise2.82](Ex2.82.rkt)
+>>>>>>> parent of 672ba84... Update README and Add Ex2.84
