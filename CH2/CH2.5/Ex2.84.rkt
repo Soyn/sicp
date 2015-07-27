@@ -17,7 +17,7 @@
          ( else ( error "Invalid type: LEVEL." type))))
 
 ( define ( apply-generic op args)
-   ( let ( ( type-tags ( map type-tags)))
+   ( let ( ( type-tags ( map type-tag args)))
       ( define ( no-method)
          ( error "No method for these types" ( list op type-tags)))
       ( let ( ( proc ( get op type-tags)))
@@ -53,12 +53,12 @@
       item
       ( let ( ( raise-fn ( get 'raise item-type)))
          ( if raise-fn
-             ( raise-to-type type ( raise-fn item))
+             ( raise-to-type type ( raise-fn item)) ;raise the item
              false)))))
 
-( define ( highest-type args)
+( define ( highest-type args)  ;get the highest level
    ( if ( null? ( cdr args))
-       ( type-tag ( cdr args))
+       ( type-tag ( car args))
        ( let ( ( t1 ( type-tag ( car args)))
                (t2 ( highest-type ( cdr args))))
           ( let ( (l1 (level t1) ( l2 level t2)))

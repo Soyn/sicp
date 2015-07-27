@@ -82,9 +82,4 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 
 `Note: `
 >> To accomodate generic number in the complex package, we should replace operators such as +, *  with their generic counterparts add,mul. 
-=======
-##[Exercise2.82](Ex2.82.rkt)
->>>>>>> parent of 672ba84... Update README and Add Ex2.84
-=======
-##[Exercise2.82](Ex2.82.rkt)
->>>>>>> parent of 672ba84... Update README and Add Ex2.84
+
