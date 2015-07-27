@@ -68,8 +68,6 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 
 > ##[Exercise2.81_c](Ex2.81_c.rkt)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ##[Exercise2.82](Ex2.82.rkt)
 
 ##[Exercise2.83](Ex2.83.rkt)
