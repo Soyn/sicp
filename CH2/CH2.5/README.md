@@ -71,3 +71,10 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 ##[Exercise2.83](Ex2.83.rkt)
 
 ##[Exercise2.84](Ex2.84.rkt)
+
+##[Exercise2.85](Ex2.85.rkt)
+
+##[Exercise2.86](Ex2.86.rkt)
+
+`Note: `
+>> To accomodate generic number in the complex package, we should replace operators such as +, *  with their generic counterparts add,mul. 
