@@ -81,3 +81,5 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 `Note: `
 >> To accomodate generic number in the complex package, we should replace operators such as +, *  with their generic counterparts add,mul. 
 
+
+##[Project_Symbolic_Algebra](Project_Symbolic_Algebra.rkt)
