@@ -83,3 +83,9 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 
 
 ##[Project_Symbolic_Algebra](Project_Symbolic_Algebra.rkt)
+
+##[Exercise2.87](Ex2.87.rkt)
+
+##[Exercise2.88](Ex2.88.rkt)
+
+##[Exercise2.89](Ex2.89.rkt)
