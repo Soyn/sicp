@@ -9,4 +9,5 @@
    ( map
      ( lambda(t) ( make-term ( order t)
                             ( - ( coeff t))))
-     termlist))
+     termlist
+     ))

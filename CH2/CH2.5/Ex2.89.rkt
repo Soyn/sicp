@@ -15,6 +15,7 @@
       
       ( define ( iter-adjoin times terms)
          ( cond ( ( =zero? ( coeff term))   ;; get the coefficient o term
+                  
                   terms))
          ( ( = exponent times)
            ( cons ( coeff term) terms))
