@@ -91,3 +91,9 @@ c. Modify apply-generic so that it doesn't try coercion if the two arguments hav
 ##[Exercise2.89](Ex2.89.rkt)
 
 ##[Exercise2.90](Ex2.90.rkt)
+
+##[Exercise2.91](Ex2.91.rkt)
+
+##Exercise2.92(Unsolved)
+
+##[Exercise2.93](Ex2.93.rkt)
