@@ -14,5 +14,5 @@
     - [Chapter2.5 Systems with Generic Operations](CH2/CH2.5)
   
  
- - Chapter 3. Modularity, Objects, and State
-    - [Chapter3.1 Assignment and Local State](CH3/CH3.1)
+- Chapter 3. Modularity, Objects, and State
+	- [Chapter3.1 Assignment and Local State](CH3/CH3.1)
