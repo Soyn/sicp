@@ -32,6 +32,3 @@
                                         proc))))))
       dispatch))
 
-( define ( acc make-account 100 'pwd))
-
-( acc 'ss)
