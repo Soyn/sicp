@@ -33,7 +33,7 @@
    ( define ( iter trials-remaining trials-passed)
       ( cond ( ( = trials-remaining 0)
                ( / trials-passed trials))   ;; if finshed we return the probability
-            ( ( experiment)   ;; This is bool, is true we increase the trials-passed and minus the trials.
+            ( ( experiment)   ;; This is bool, if true we increase the trials-passed and minus the trials.
               ( iter ( - trials-remaining 1) ( + trials-passed 1)))
             ( else
               ( iter ( - trials-remaining 1) trials-passed))))
