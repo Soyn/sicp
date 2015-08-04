@@ -16,6 +16,6 @@
 
 ;; test
 
-(+ (f 1) (f 0)) ;;==> 0, So evaluated from left to right
+(+ (f 1) (f 0)) ;;==> 1, So evaluated from left to right
 
 ( + ( f 0) ( f 1)) ;; ==>0
