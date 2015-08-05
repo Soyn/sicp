@@ -18,7 +18,8 @@
 
 > In section 1.2.1 we used the substitution model to analyze two procedures for computing
    factorials, a recursive version
->> ```racket
+   
+ ```racket
 
         (define (factorial n)
             (if (= n 1)
@@ -27,8 +28,10 @@
 
 ``` 
 
->and an iterative version
->> ```racket
+and an iterative version
+
+```racket
+
     (define (factorial n)
         (fact-iter 1 1 n))
     (define (fact-iter product counter max-count)
@@ -38,9 +41,25 @@
                             (+ counter 1)
                             max-count)))
 ```
+Show the environment structures created by evaluating (factorial 6) using each version of the
+factorial procedure.
 
 `Solution: `
 
 **Following is the procedure of creating recurison factorial.**
-![image]()
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.09a.jpg)
+
+**Following is the envirment structure created by evaluating (factorial 6)** 
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.09b.jpg)
+
+**Following is the envirment structure created by (factorial n)**
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.09c.jpg)
+
+**Following is the envirment structure created by evaluating ( factorial 6)**
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.09d.jpg)
+
 
