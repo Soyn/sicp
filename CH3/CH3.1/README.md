@@ -272,4 +272,4 @@ What happens if we try to compute (last-pair z)?
 
 
 
-** And if we compute the ```racket  (last-pair 'z') ``` we will drop into infinite loop. **
+**And if we compute the  (last-pair 'z') we will drop into infinite loop**
