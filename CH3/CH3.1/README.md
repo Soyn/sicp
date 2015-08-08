@@ -178,3 +178,97 @@ shared between acc and acc2?
 
 
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.11.jpg)
+
+
+##Exercise3.12
+
+>The following procedure for appending lists was introduced in section 2.2.1:
+
+```racket
+
+(define (append x y)
+    (if (null? x)
+        y
+        (cons (car x) (append (cdr x) y))))
+        
+```
+
+**Append** forms a new list by successively consing the elements of x onto y. The procedure append! is
+similar to append, but it is a mutator rather than a constructor. It appends the lists by splicing them
+together, modifying the final pair of x so that its cdr is now y. (It is an error to call append! with an
+empty x.)
+
+```racket
+
+(define (append! x y)
+    (set-cdr! (last-pair x) y)
+    x)
+```
+
+Here last-pair is a procedure that returns the last pair in its argument:
+
+```racket
+
+(define (last-pair x)
+    (if (null? (cdr x))
+    x
+    (last-pair (cdr x))))
+    
+```
+
+Consider the interaction
+
+```racket
+
+(define x (list 'a 'b))
+(define y (list 'c 'd))
+(define z (append x y))
+z
+(a b c d)
+(cdr x)
+<response>
+(define w (append! x y))
+w
+(a b c d)
+(cdr x)
+<response>
+
+```
+
+What are the missing <response>? Draw box-and-pointer diagrams to explain your answer.
+
+`Solution: `
+> the respnse is **(b)** and **(b c d)**, and following is the box-and-pointer diagram
+
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.12a.jpg)
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.12b.jpg)
+
+##Exercise3.13
+
+>Consider the following make-cycle procedure, which uses the last-pair procedure defined in exercise 3.12:
+
+```racket
+
+(define (make-cycle x)
+    (set-cdr! (last-pair x) x)
+    x)
+    
+```
+
+Draw a box-and-pointer diagram that shows the structure **z** created by
+
+```racket
+
+(define z (make-cycle (list 'a 'b 'c)))
+```
+What happens if we try to compute (last-pair z)?
+
+`Solution: `
+>Following is the box-and-pointer diagram
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.13.jpg)
+
+
+**And if we compute the ```racket  (last-pair 'z') ``` we will drop into infinite loop. **
