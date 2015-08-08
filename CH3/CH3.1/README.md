@@ -268,7 +268,7 @@ What happens if we try to compute (last-pair z)?
 `Solution: `
 >Following is the box-and-pointer diagram
 
-![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.13.jpg)
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.13.png)
 
 
 **And if we compute the ```racket  (last-pair 'z') ``` we will drop into infinite loop. **
