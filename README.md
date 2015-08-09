@@ -16,3 +16,5 @@
  
 - Chapter 3. Modularity, Objects, and State
 	- [Chapter3.1 Assignment and Local State](CH3/CH3.1)
+	- [Chapter3.2 The Environment Model of Evaluation](CH3/CH3.2)
+	- [Chapter3.3 Modeling with Mutable Data](CH3/CH3.3)
