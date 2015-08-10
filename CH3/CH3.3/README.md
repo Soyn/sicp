@@ -23,6 +23,8 @@ empty x.)
     x)
 ```
 
+
+
 Here last-pair is a procedure that returns the last pair in its argument:
 
 ```racket
@@ -124,3 +126,52 @@ Following is the box-and-pointer diagram of **( define v (list 'a 'b 'c 'd))**
 Following is the box-and-pointer diagram of **( define w ( mystery v))**
 
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.14b.png)
+
+
+##Exercise3.15 
+> Draw box-and-pointer diagrams to explain the effect of set-to-wow! on the structures z1 and z2 above.
+
+`Solution: `
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.15a.png)
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.15b.png)
+
+
+##Exercise3.16
+
+>Ben Bitdiddle decides to write a procedure to count the number of pairs in any list structure. 
+   "It's easy,'' he reasons. The number of pairs in any structure is the number in the car plus the
+    number in the cdr plus one more to count the current pair.'' So Ben writes the following procedure:
+    
+```racket
+
+    (define (count-pairs x)
+        (if (not (pair? x))
+            0
+            (+ (count-pairs (car x))
+                (count-pairs (cdr x))
+                1)))
+```
+
+Show that this procedure is not correct. In particular, draw box-and-pointer diagrams representing list
+structures made up of exactly three pairs for which Ben's procedure would return 3; return 4; return 7;
+never return at all.
+
+`Solution: `
+
+- The procedure returns 3 is `( define three (cons (cons 'a '()) ( cons 'b ())))`, following is the box-and-pointer diagram.
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_3.png)
+
+- The procedure returns 4 is '( define four (cons 'a ( cons 'b '())))', following is the box-and-pointer diagram.
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_4.png)
+
+- The procedure returns 7 is `( define seven (cons three three))`,following is the box-and-pointer diagram.
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_7.png)
+
+- The procedure has no return-value is '( define crycle (cons a(cons a '())))' and then `( set-cdr! ( last-pair crycle) crycle)`, following is the box-and-pointer diagram.
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_crycle.png)
