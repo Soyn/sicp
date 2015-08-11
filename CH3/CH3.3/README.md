@@ -175,3 +175,5 @@ never return at all.
 - The procedure has no return-value is '( define crycle (cons a(cons a '())))' and then `( set-cdr! ( last-pair crycle) crycle)`, following is the box-and-pointer diagram.
 
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_crycle.png)
+
+##[Exercise3.17](Ex3.17.rkt)
