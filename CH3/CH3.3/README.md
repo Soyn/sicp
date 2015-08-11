@@ -177,3 +177,7 @@ never return at all.
 ![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.16_crycle.png)
 
 ##[Exercise3.17](Ex3.17.rkt)
+
+##[Exercise3.18](Ex3.18.rkt)
+
+##[Exercise3.19](Ex3.19.rkt)
