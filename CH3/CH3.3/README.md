@@ -185,6 +185,7 @@ never return at all.
 ##Exercise3.20
 
 >Draw environment diagrams to illustrate the evaluation of the sequence of expressions
+
 ```racket
 
     (define x (cons 1 2))
@@ -194,6 +195,7 @@ never return at all.
     17
 
 ```
+
 using the procedural implementation of pairs given above. (Compare exercise 3.11.)
 
 
