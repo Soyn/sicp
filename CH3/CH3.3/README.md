@@ -181,3 +181,25 @@ never return at all.
 ##[Exercise3.18](Ex3.18.rkt)
 
 ##[Exercise3.19](Ex3.19.rkt)
+
+##Exercise3.20
+
+>Draw environment diagrams to illustrate the evaluation of the sequence of expressions
+```racket
+
+    (define x (cons 1 2))
+    (define z (cons x x))
+    (set-car! (cdr z) 17)
+    (car x)
+    17
+
+```
+using the procedural implementation of pairs given above. (Compare exercise 3.11.)
+
+
+`Solution: `
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.20_1.png)
+
+![image](https://github.com/Soyn/sicp/blob/master/screenshots/Ex3.20_2.png)
+
