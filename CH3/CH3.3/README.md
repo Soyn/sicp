@@ -240,3 +240,5 @@ which returns the `car`'a part of the queue.
 ```racket
     (define (print-queue queue) ( car queue))
 ```
+
+##[Exercise3.22](Ex3.22.rkt)
