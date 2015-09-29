@@ -242,3 +242,5 @@ which returns the `car`'a part of the queue.
 ```
 
 ##[Exercise3.22](Ex3.22.rkt)
+
+##[Exercise3.25](Ex3.25.rkt)
